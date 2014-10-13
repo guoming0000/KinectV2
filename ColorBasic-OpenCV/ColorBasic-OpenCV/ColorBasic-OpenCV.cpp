@@ -1,19 +1,19 @@
-// ColorBasic-OpenCV.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌÐòµÄÈë¿Úµã¡£
+// ColorBasic-OpenCV.cpp : å®šä¹‰æŽ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 /****************************************************
-³ÌÐò¹¦ÄÜ:Kinect V2²ÊÉ«Êý¾ÝÓÃOpenCVÏÔÊ¾
-¿ª·¢»·¾³:win32¿ØÖÆÌ¨Ó¦ÓÃ³ÌÐò x86³ÌÐò (³ÌÐòÀàÐÍ)
-		VisualStudio 2012 (¿ª·¢¹¤¾ß)
-		OpenCV2.4.10 (ÏÔÊ¾½çÃæ¿â vc11¿â, http://guoming.me/opencv)
-		KinectSDK-v2.0-PublicPreview1409-Setup (Kinect SDKÇý¶¯°æ±¾, http://guoming.me/kinect2)
-		Windows 8.1 (²Ù×÷ÏµÍ³)
-²©¿ÍÎÄÕÂ:http://guoming.me/kinectv2-color-opencv
-´úÂëµØÖ·:https://github.com/guoming0000/KinectV2/ColorBasic-OpenCV
+ç¨‹åºåŠŸèƒ½:Kinect V2å½©è‰²æ•°æ®ç”¨OpenCVæ˜¾ç¤º
+å¼€å‘çŽ¯å¢ƒ:win32æŽ§åˆ¶å°åº”ç”¨ç¨‹åº x86ç¨‹åº (ç¨‹åºç±»åž‹)
+		VisualStudio 2012 (å¼€å‘å·¥å…·)
+		OpenCV2.4.10 (æ˜¾ç¤ºç•Œé¢åº“ vc11åº“, http://guoming.me/opencv)
+		KinectSDK-v2.0-PublicPreview1409-Setup (Kinect SDKé©±åŠ¨ç‰ˆæœ¬, http://guoming.me/kinect2)
+		Windows 8.1 (æ“ä½œç³»ç»Ÿ)
+åšå®¢æ–‡ç« :http://guoming.me/kinectv2-color-opencv
+ä»£ç åœ°å€:https://github.com/guoming0000/KinectV2/tree/master/ColorBasic-OpenCV
 
-¿ª·¢ÈËÔ±:Ð¡Ã÷
-¿ª·¢Ê±¼ä:2014-10-13~ 2014-10-14
-ÁªÏµ·½Ê½:	i@guoming.me (ÓÊÏä£¬ÍÆ¼öÁªÏµ·½Ê½)
-		http://guoming.me (ÍøÕ¾£¬Ìå¸Ð×ÊÑ¶ºÍÖªÊ¶»ã×Ü)
-		http://weibo.com/guoming0000 (ÐÂÀËÎ¢²©£¬ÇëÎðË½ÐÅ)
+å¼€å‘äººå‘˜:å°æ˜Ž
+å¼€å‘æ—¶é—´:2014-10-13~ 2014-10-14
+è”ç³»æ–¹å¼:	i@guoming.me (é‚®ç®±ï¼ŒæŽ¨èè”ç³»æ–¹å¼)
+		http://guoming.me (ç½‘ç«™ï¼Œä½“æ„Ÿèµ„è®¯å’ŒçŸ¥è¯†æ±‡æ€»)
+		http://weibo.com/guoming0000 (æ–°æµªå¾®åšï¼Œè¯·å‹¿ç§ä¿¡)
 ******************************************************/
 #include "stdafx.h"
 #include "opencv2/opencv.hpp"
@@ -31,7 +31,7 @@ inline void SafeRelease(Interface *& pInterfaceToRelease)
 	}
 }
 
-//¶¨ÒåKinect·½·¨Àà
+//å®šä¹‰Kinectæ–¹æ³•ç±»
 class Kinect
 {
 public:
@@ -39,9 +39,9 @@ public:
 	static const int        cColorHeight = 1080;
 	Kinect();
 	~Kinect();
-	HRESULT					InitKinect();//³õÊ¼»¯Kinect
-	void					Update();//¸üÐÂÊý¾Ý
-	void					ProcessColor(RGBQUAD* pBuffer, int nWidth, int nHeight);//´¦ÀíµÃµ½µÄÊý¾Ý
+	HRESULT					InitKinect();//åˆå§‹åŒ–Kinect
+	void					Update();//æ›´æ–°æ•°æ®
+	void					ProcessColor(RGBQUAD* pBuffer, int nWidth, int nHeight);//å¤„ç†å¾—åˆ°çš„æ•°æ®
 private:
 	
 	IKinectSensor*          m_pKinectSensor;// Current Kinect
@@ -50,7 +50,7 @@ private:
 
 };
 
-//Ö÷º¯Êý
+//ä¸»å‡½æ•°
 int main()
 {
 	Kinect kinect;
@@ -58,7 +58,7 @@ int main()
 	while(1)
 	{
 		kinect.Update();
-		if(waitKey(1) >= 0)//°´ÏÂÈÎÒâ¼üÍË³ö
+		if(waitKey(1) >= 0)//æŒ‰ä¸‹ä»»æ„é”®é€€å‡º
 		{
 			break;
 		}
