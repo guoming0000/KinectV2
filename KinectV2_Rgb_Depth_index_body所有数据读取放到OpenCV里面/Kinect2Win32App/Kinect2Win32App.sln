@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 13.00
+# Visual Studio 2013
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kinect2Win32App", "Kinect2Win32App\Kinect2Win32App.vcxproj", "{5D2EF9BC-6336-4D6C-8AAB-63B61F373222}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D2EF9BC-6336-4D6C-8AAB-63B61F373222}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5D2EF9BC-6336-4D6C-8AAB-63B61F373222}.Debug|Win32.Build.0 = Debug|Win32
+		{5D2EF9BC-6336-4D6C-8AAB-63B61F373222}.Release|Win32.ActiveCfg = Release|Win32
+		{5D2EF9BC-6336-4D6C-8AAB-63B61F373222}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
