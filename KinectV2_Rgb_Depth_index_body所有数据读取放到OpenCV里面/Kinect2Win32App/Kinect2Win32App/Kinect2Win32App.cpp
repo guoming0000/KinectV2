@@ -1,20 +1,20 @@
-// Kinect2Win32App.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// Kinect2Win32App.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 /****************************************************
-³ÌĞò¹¦ÄÜ:¼ªÁĞÌêĞëµ¶ÔË¶¯·ÖÎö
-¿ª·¢»·¾³:win32¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞò x86³ÌĞò (³ÌĞòÀàĞÍ)
-		VisualStudio 2013 (¿ª·¢¹¤¾ß)
-		KinectSDK-v2.0-PublicPreview1409-Setup (Kinect SDKÇı¶¯°æ±¾, http://guoming.me/kinect2)
-		Windows 8.1 (²Ù×÷ÏµÍ³)
-¿ª·¢ÈËÔ±:Ğ¡Ã÷/ÍõĞñ»ª
-¿ª·¢Ê±¼ä:2015-4-11~ 2015-5-30
-ÁªÏµ·½Ê½:	i@guoming.me (ÓÊÏä£¬ÍÆ¼öÁªÏµ·½Ê½)
+ç¨‹åºåŠŸèƒ½:ä½¿ç”¨OpenCVæ˜¾ç¤ºKinectV2æ•°æ®
+å¼€å‘ç¯å¢ƒ:win32æ§åˆ¶å°åº”ç”¨ç¨‹åº x86ç¨‹åº (ç¨‹åºç±»å‹)
+		VisualStudio 2013 (å¼€å‘å·¥å…·)
+		KinectSDK-v2.0-PublicPreview1409-Setup (Kinect SDKé©±åŠ¨ç‰ˆæœ¬, http://guoming.me/kinect2)
+		Windows 8.1 (æ“ä½œç³»ç»Ÿ)
+å¼€å‘äººå‘˜:å°æ˜
+å¼€å‘æ—¶é—´:2015-4-11~ 2015-5-30
+è”ç³»æ–¹å¼:	i@guoming.me (é‚®ç®±ï¼Œæ¨èè”ç³»æ–¹å¼)
 ******************************************************/
 #include "stdafx.h"
 #include "Tools.h"
 #include <windows.h>
-#include <Mmsystem.h>//ĞèÒª Winmm.lib¿âµÄÖ§³Ö ----timeGetTime()
+#include <Mmsystem.h>//éœ€è¦ Winmm.libåº“çš„æ”¯æŒ ----timeGetTime()
 #include "Kinect.h"
-//Ö÷º¯Êı
+//ä¸»å‡½æ•°
 int main()
 {
 	printf_s("start analysis Kinect for Windows V2 body data....");
