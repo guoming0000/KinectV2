@@ -6,13 +6,13 @@
 		OpenCV2.4.10 (显示界面库 vc11库, http://guoming.me/opencv)
 		KinectSDK-v2.0-PublicPreview1409-Setup (Kinect SDK驱动版本, http://guoming.me/kinect2)
 		Windows 8.1 (操作系统)
-博客文章:http://guoming.me/kinectv2-color-opencv
+博客文章:http://brightguo.com/kinectv2-color-opencv
 代码地址:https://github.com/guoming0000/KinectV2/tree/master/ColorBasic-OpenCV
 
 开发人员:小明
 开发时间:2014-10-13~ 2014-10-14
-联系方式:	i@guoming.me (邮箱，推荐联系方式)
-		http://guoming.me (网站，体感资讯和知识汇总)
+联系方式:	i@brightguo.com (邮箱，推荐联系方式)
+		http://brightguo.com (网站，体感资讯和知识汇总)
 		http://weibo.com/guoming0000 (新浪微博，请勿私信)
 ******************************************************/
 #include "stdafx.h"
